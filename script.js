@@ -41,21 +41,90 @@
 
 // 4. We need to make a decision based on the evaluation, true or false. 
 
-const age = 18;
+// const age = 18;
 
-const isofAge = age >= 18;
+// const isofAge = age >= 18;
 
-if (isofAge) {
-    console.log("YAY!, You can take a drivers license");
+// if (isofAge) {
+//     console.log("YAY!, You can take a drivers license");
+// } else {
+//     console.log("You're not old enough to take your drivers license");
+// }
+
+// if (age >= 18) {
+//     console.log("YAY!, You can take a drivers license");
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`Sorry you are too young. Wait another ${yearsLeft} years`);
+// }
+
+// SWITCH
+
+//Is an alternative way of writing a more complicated if else statement. 
+
+//SWITCH
+
+// Switch is an alternative way of writing a complicated if/else statement.
+
+// const day = "monday";
+
+// // switch (day) {
+//     //case "monday":
+//         // day === "monday" & notice : not ; 
+//         console.log("Plan my course in Javescript");
+//         // can execute multiple lines
+//         console.log("Go to the gym");
+//         break;
+//         // you need to end the case with break
+
+//         case "tuesday":
+//             console.log("Prepare for theory lesson");
+//             break;
+//         case "wednesday":
+//         case "thursday":
+//             // you can output the same for two different values
+//             console.log("Write some code examples");
+//             break;
+//         case "friday":
+//             console.log("Give students feedback");
+//             break;
+//         case "saturday":
+//         case "sunday":
+//             console.log("Enjoy the weekend");
+//         break;
+//         default:
+//             console.log("not a valid day");
+//         // default will be executed if all other options fail
+// // }
+
+const day = "monday";
+
+if (day === "monday") {
+    console.log("Plan my javacsript course!");
+    console.log("Got to the gym");
+} else if (day === "tuesday") {
+    console.log("prepare for theory lesson");
+} else if (day === "wednesday" || day === "thursday") {
+    console.log("write some code examples");
+} else if (day === "friday") {
+    console.log("Give students feedback");
+} else if (day === "saturday" || day === "sunday") {
+    console.log("Enjoy your weekend");
 } else {
-    console.log("You're not old enough to take your drivers license");
+    console.log("Not a valid day");
 }
 
-if (age >= 18) {
-    console.log("YAY!, You can take a drivers license");
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`Sorry you are too young. Wait another ${yearsLeft} years`);
-}
+// THE CONDITIONAL OPERATOR, TERNARY
+
+const age = 25;
+
+age >= 18 
+//condition
+? console.log(`I like to drink beer`) 
+// if
+: console.log("I'll drink water.."); 
+//else
+
+ 
 
 
