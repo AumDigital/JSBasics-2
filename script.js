@@ -125,6 +125,40 @@ age >= 18
 : console.log("I'll drink water.."); 
 //else
 
+ let n = "1" + 1;
+ n = n - 1;
+ console.log(n);
+
+ //ARRAYS
+
+ // A data structure which acts as a big container where we can store stuff if we have more than one value. 
+
+ const dogs = ["Tore", "Clementine", "Doris"];
+ console.log(dogs);
+
+ const years = [1985, 1990, 1994];
  
+ console.log(dogs);
+
+ dogs[0] = "Trosan";
+ console.log(dogs);
+
+ const dogName = "Tore";
+const tore = [dogName, "Miniature Bull Terrier", 2021-2018, "He likes sleeping in his fluffy bed", dogs];
+
+console.log(tore);
+console.log(tore.length);
+console.log(tore[2]);
 
 
+const calcAge = function(birthYear) { // Function to calculate age
+	return 2021 - birthYear;
+};
+
+const yearOfBirth = [1999, 1985, 2001, 2016, 1978]; // Array with birth years
+
+const firstAge = calcAge(yearOfBirth[0]); // You need to do each calculation seperately
+
+const secondAge = calcAge(yearOfBirth[1]); // Seclecting which array index to calculate.
+
+console.log(firstAge, secondAge);
